@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>intour</object-name>
+    <object-name>planchet</object-name>
+    <object-name>intverriere</object-name>
+    <object-name>inttourverriere</object-name>
+    <object-name>intporteA</object-name>
+    <object-name>intporteAG</object-name>
+    <object-name>intporteAD</object-name>
+    <object-name>intporteG</object-name>
+    <object-name>intporteD</object-name>
+    
+    <!-- Objets transparents -->
+    <object-name>intvitres</object-name>
+    <object-name>intcanope</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/XP-67/Models/Effects/Glass/glass</inherits-from>
+    <object-name>intvitres</object-name>
+    <object-name>intcanope</object-name>
+  </effect>
+  
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>intvitres</object-name>
+    <object-name>intcanope</object-name>
+  </effect>
+  
+  <!-- Planche de bord -->
+  <model>
+    <path>Aircraft/XP-67/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -3.67478 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  0.02190 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/XP-67/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -2.9 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m>  0.1 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Seat -->
+  <model>
+    <path>Aircraft/XP-67/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m> -2.94 </x-m>
+      <y-m>  0.00 </y-m>
+      <z-m>  0.12 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Throttle -->
+  <model>
+    <path>Aircraft/XP-67/Models/Interior/Panel/Instruments/throttle/throttle.xml</path>
+    <offsets>
+      <x-m> -3.360 </x-m>
+      <y-m> -0.325 </y-m>
+      <z-m> -0.064 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Animation des portes des train -->
+  <animation>
+    <type>rotate</type>
+    <object-name>intporteA</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 100 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -6.52283 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.65017 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>intporteAG</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep>   0 </dep></entry>
+      <entry><ind> 0.15 </ind><dep> -80 </dep></entry>
+      <entry><ind> 1.00 </ind><dep> -80 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -5.59860 </x1-m>
+      <y1-m> -0.25339 </y1-m>
+      <z1-m> -0.71055 </z1-m>
+      <x2-m> -4.57148 </x2-m>
+      <y2-m> -0.25339 </y2-m>
+      <z2-m> -0.74050 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>intporteAD</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep>   0 </dep></entry>
+      <entry><ind> 0.15 </ind><dep> -80 </dep></entry>
+      <entry><ind> 1.00 </ind><dep> -80 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -4.57148 </x1-m>
+      <y1-m>  0.25339 </y1-m>
+      <z1-m> -0.74050 </z1-m>
+      <x2-m> -5.59860 </x2-m>
+      <y2-m>  0.25339 </y2-m>
+      <z2-m> -0.71055 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>intporteG</object-name>
+    <property>gear/gear[1]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep>   0 </dep></entry>
+      <entry><ind> 0.15 </ind><dep> 105 </dep></entry>
+      <entry><ind> 1.00 </ind><dep> 105 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -1.59599 </x1-m>
+      <y1-m> -2.59251 </y1-m>
+      <z1-m> -0.74470 </z1-m>
+      <x2-m>  0.29351 </x2-m>
+      <y2-m> -2.59251 </y2-m>
+      <z2-m> -0.58629 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>intporteD</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep>   0 </dep></entry>
+      <entry><ind> 0.15 </ind><dep> 105 </dep></entry>
+      <entry><ind> 1.00 </ind><dep> 105 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m>  0.29351 </x1-m>
+      <y1-m>  2.59251 </y1-m>
+      <z1-m> -0.58629 </z1-m>
+      <x2-m> -1.59599 </x2-m>
+      <y2-m>  2.59251 </y2-m>
+      <z2-m> -0.74470 </z2-m>
+    </axis>
+  </animation>
+  
+  <!-- Canopy -->
+  <animation>
+    <name>IntCanopeHaut</name>
+    <object-name>intverriere</object-name>
+    <object-name>inttourverriere</object-name>
+    <object-name>intcanope</object-name>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>IntCanopeHaut</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>IntCanopeHaut</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> 0.00 </dep></entry>
+      <entry><ind> 0.1 </ind><dep> 0.04 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> 0.04 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>IntCanopeHaut</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> 0.00 </dep></entry>
+      <entry><ind> 0.0 </ind><dep> 0.00 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> 0.78 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+</PropertyList>

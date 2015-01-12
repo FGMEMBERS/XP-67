@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>asi.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <object-name>visses</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/XP-67/Models/Effects/Glass/glass</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+  
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <!--
+    <condition>
+      <property>controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
+    </condition>
+    -->
+    <emission>
+      <!-- <factor-prop>controls/lighting/luminosite-lights</factor-prop> -->
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+    <interpolation>
+      <entry><ind>   0.00 </ind><dep>   0 </dep></entry> <!--   0 mph -->
+      <entry><ind>  52.14 </ind><dep>  27 </dep></entry> <!--  60 mph -->
+      <entry><ind>  69.52 </ind><dep>  57 </dep></entry> <!--  80 mph -->
+      <entry><ind>  86.90 </ind><dep>  88 </dep></entry> <!-- 100 mph -->
+      <entry><ind> 104.28 </ind><dep> 116 </dep></entry> <!-- 120 mph -->
+      <entry><ind> 121.66 </ind><dep> 144 </dep></entry> <!-- 140 mph -->
+      <entry><ind> 139.04 </ind><dep> 170 </dep></entry> <!-- 160 mph -->
+      <entry><ind> 156.41 </ind><dep> 196 </dep></entry> <!-- 180 mph -->
+      <entry><ind> 173.79 </ind><dep> 223 </dep></entry> <!-- 200 mph -->
+      <entry><ind> 191.17 </ind><dep> 231 </dep></entry> <!-- 220 mph -->
+      <entry><ind> 208.55 </ind><dep> 239 </dep></entry> <!-- 240 mph -->
+      <entry><ind> 225.93 </ind><dep> 247 </dep></entry> <!-- 260 mph --> 
+      <entry><ind> 243.31 </ind><dep> 255 </dep></entry> <!-- 280 mph -->
+      <entry><ind> 260.69 </ind><dep> 262 </dep></entry> <!-- 300 mph -->
+      <entry><ind> 278.07 </ind><dep> 271 </dep></entry> <!-- 320 mph -->
+      <entry><ind> 295.45 </ind><dep> 279 </dep></entry> <!-- 340 mph -->
+      <entry><ind> 312.83 </ind><dep> 286 </dep></entry> <!-- 360 mph -->
+      <entry><ind> 330.21 </ind><dep> 294 </dep></entry> <!-- 380 mph -->
+      <entry><ind> 347.59 </ind><dep> 302 </dep></entry> <!-- 400 mph -->
+      <entry><ind> 434.48 </ind><dep> 342 </dep></entry> <!-- 500 mph -->
+    </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+ 
+</PropertyList>

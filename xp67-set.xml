@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList include="xp67-base.xml">
+
+  <sim>
+
+    <description>Mc Donnell XP 67 Bat (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM)</author>
+
+    <flight-model>yasim</flight-model>
+    <aero>xp67-yasim</aero>
+    
+    <rating>
+      <FDM type="int">     2 </FDM>
+      <systems type="int"> 2 </systems>
+      <cockpit type="int"> 3 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+
+  </sim>
+
+</PropertyList>
+

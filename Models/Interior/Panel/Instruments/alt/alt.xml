@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList> 
+
+  <path>alt.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>alt-Needle1</object-name>
+    <object-name>alt-Needle2</object-name>
+    <object-name>alt-Needle3</object-name>
+    <object-name>ingh</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/XP-67/Models/Effects/Glass/glass</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+  
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>alt-Needle1</object-name>
+    <object-name>alt-Needle2</object-name>
+    <object-name>alt-Needle3</object-name>
+    <!--
+    <condition>
+      <property>controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
+    </condition>
+    -->
+    <emission>
+      <!-- <factor-prop>controls/lighting/luminosite-lights</factor-prop> -->
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>alt-Needle1</object-name>
+    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+    <factor> 0.36 </factor>
+    <axis>  
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>alt-Needle2</object-name>
+    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+    <factor> 0.036 </factor>
+    <axis> 
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>alt-Needle3</object-name>
+    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+    <factor> 0.0036 </factor>
+    <axis> 
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>ingh</object-name>
+    <property>instrumentation/altimeter/setting-inhg</property>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
