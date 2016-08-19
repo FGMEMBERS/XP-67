@@ -5,7 +5,7 @@
      Sources              : http://en.wikipedia.org/wiki/McDonnell_XP-67
 
      Wingspan             :    55 ft          ( 16.76 m  )
-     Lenght               :    44 ft 9 1/4 in ( 13.65 m  )
+     Length               :    44 ft 9 1/4 in ( 13.65 m  )
      Height               :    15 ft 9 in     (  4.80 m  )
      Masse a vide         : 17745 lb          (  8049 kg )
      Engines              : 2 Continental XIV-1430-17/19 twelve cylinder inverted vee liquid-cooled engine ( 1350 hp each )
@@ -63,7 +63,7 @@
         dihedral="5"
         sweep="-4"
         camber="0.001">
-        <stall aoa="20" width="1" peak="3"/>
+        <stall aoa="20" width="4" peak="3"/>
         <flap0 start="0.023" end="0.550" lift="1.2" drag="2.2"/>
         <flap1 start="0.550" end="0.930" lift="1.3" drag="1.2"/>
 
@@ -100,7 +100,7 @@
          length="2.448"
          sweep="6"
          taper="0.6">
-         <stall aoa="16" width="1" peak="2.5"/>
+         <stall aoa="16" width="2" peak="2.5"/>
          <flap0 start="0" end="1" lift="1.3" drag="1.5"/>
 
          <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
@@ -174,7 +174,8 @@
         compression="0.4"
         sfric="0.3"
         dfric="0.5">
-        <control-input axis="/controls/flight/rudder" control="STEER" src0="-1.0" src1="1.0" dst0="-0.2" dst1="0.2"/>
+	 <control-input axis="/controls/flight/rudder" control="STEER" square="true" src0="-1.0" dst0="-1.2217304764" src1="1.0" dst1="1.2217304764"/>
+        <!-- <control-input axis="/controls/flight/rudder" control="STEER" src0="-1.0" src1="1.0" dst0="-1.75" dst1="1.75"/> -->
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
 
         <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
@@ -216,11 +217,11 @@
         <control-speed control="EXTEND" transition-time="5"/>
   </gear>
         
-  <tank x="1.9" y=" 4.817" z="0.078" capacity="2000"/>
-  <tank x="1.9" y="-4.817" z="0.078" capacity="2000"/>
+  <tank x="1.9" y=" 4.817" z="0.078" capacity="2500"/>
+  <tank x="1.9" y="-4.817" z="0.078" capacity="2500"/>
 
   <!-- CG placment -->
   <ballast x=" 8" y="0" z="-1.9" mass=" 2000"/>
-  <ballast x="-6" y="0" z=" 2.0" mass="-1000"/>
+  <ballast x="-6" y="0" z=" 2.0" mass="-2000"/>
   
 </airplane>
