@@ -4,6 +4,11 @@
 
   <path>xp67.ac</path>
 
+  <!-- MP sound call -->
+  <sound>
+    <path>Aircraft/XP-67/Sounds/mp-sound.xml</path>
+  </sound>
+  
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/XP-67/Models/Liveries", 10);
@@ -166,7 +171,6 @@
 
   <!-- Interior -->
   <model>
-    <usage>interior</usage>
     <path>Aircraft/XP-67/Models/Interior/interior.xml</path>
   </model>
 
@@ -222,62 +226,6 @@
       <z-m> -2.39202 </z-m>
     </offsets>
   </model>
-
-  <!-- Effets de tir -->
-  <!-- Extérieur gauche
-  <model>
-    <path>Aircraft/XP-67/Models/Effects/guns/fire.xml</path>
-    <offsets>
-      <x-m> -5.333 </x-m>
-      <y-m> -0.245 </y-m>
-      <z-m>  0.210 </z-m>
-      <pitch-deg> 180 </pitch-deg>
-    </offsets>
-  </model> -->
-
-  <!--Extérieur droit
-  <model>
-    <path>Aircraft/XP-67/Models/Effects/guns/fire.xml</path>
-    <offsets>
-      <x-m> -5.333 </x-m>
-      <y-m>  0.245 </y-m>
-      <z-m>  0.210 </z-m>
-      <pitch-deg> 180 </pitch-deg>
-    </offsets>
-  </model> -->
-
-  <!-- Central gauche
-  <model>
-    <path>Aircraft/XP-67/Models/Effects/guns/fire.xml</path>
-    <offsets>
-      <x-m> -5.434 </x-m>
-      <y-m> -0.093 </y-m>
-      <z-m>  0.323 </z-m>
-      <pitch-deg> 180 </pitch-deg>
-    </offsets>
-  </model> -->
-
-  <!-- Central droit
-  <model>
-    <path>Aircraft/XP-67/Models/Effects/guns/fire.xml</path>
-    <offsets>
-      <x-m> -5.624 </x-m>
-      <y-m>  0.093 </y-m>
-      <z-m>  0.323 </z-m>
-      <pitch-deg> 180 </pitch-deg>
-    </offsets>
-  </model> -->
-
-  <!-- Canon
-  <model>
-    <path>Aircraft/XP-67/Models/Effects/guns/fire.xml</path>
-    <offsets>
-      <x-m> -5.498 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  0.161 </z-m>
-      <pitch-deg> 180 </pitch-deg>
-    </offsets>
-  </model> -->
 
   <!-- Les hélices --> 
   <animation>

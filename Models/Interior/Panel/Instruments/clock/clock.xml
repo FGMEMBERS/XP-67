@@ -11,7 +11,7 @@
     <object-name>heures</object-name>
     <object-name>minutes</object-name>
     <object-name>secondes</object-name>
-	
+
     <object-name>vitre</object-name>
   </animation>
 
@@ -27,14 +27,8 @@
     <object-name>heures</object-name>
     <object-name>minutes</object-name>
     <object-name>secondes</object-name>
-    <!--
-    <condition>
-      <property>controls/lighting/instrument-lights</property>
-      <property>/controls/electric/battery-switch</property>
-    </condition>
-    -->
     <emission>
-      <!-- <factor-prop>controls/lighting/luminosite-lights</factor-prop> -->
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>

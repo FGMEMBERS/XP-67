@@ -21,13 +21,33 @@
     </offsets>
   </model>
 
-  <!-- COMPASS -->
+  <!-- ALT -->
   <model>
-    <path>Aircraft/XP-67/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <path>Aircraft/XP-67/Models/Interior/Panel/Instruments/alt/alt.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m> -0.070 </y-m>
-      <z-m>  0.300 </z-m>
+      <x-m> -0.005 </x-m>
+      <y-m>  0.260 </y-m>
+      <z-m>  0.150 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- AMMETER -->
+  <model>
+    <path>Aircraft/XP-67/Models/Interior/Panel/Instruments/ammeter/ammeter.xml</path>
+    <offsets>
+      <x-m> -0.005 </x-m>
+      <y-m> -0.122 </y-m>
+      <z-m>  0.434 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/XP-67/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> -0.002 </x-m>
+      <y-m>  0.274 </y-m>
+      <z-m>  0.250 </z-m>
     </offsets>
   </model>
   
@@ -41,13 +61,43 @@
     </offsets>
   </model>
   
-  <!-- ASI -->
+  <!-- COMPASS -->
   <model>
-    <path>Aircraft/XP-67/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <path>Aircraft/XP-67/Models/Interior/Panel/Instruments/compass/compass.xml</path>
     <offsets>
-      <x-m> -0.002 </x-m>
-      <y-m>  0.274 </y-m>
-      <z-m>  0.250 </z-m>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.070 </y-m>
+      <z-m>  0.300 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- FLAPS/GEARS -->
+  <model>
+    <path>Aircraft/XP-67/Models/Interior/Panel/Instruments/flapsgear/flapgear.xml</path>
+    <offsets>
+      <x-m> -0.009 </x-m>
+      <y-m> -0.040 </y-m>
+      <z-m>  0.057 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- FUEL -->
+  <model>
+    <path>Aircraft/XP-67/Models/Interior/Panel/Instruments/fuel/fuel.xml</path>
+    <offsets>
+      <x-m> -0.005 </x-m>
+      <y-m> -0.207 </y-m>
+      <z-m>  0.434 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- MAGNETOS -->
+  <model>
+    <path>Aircraft/XP-67/Models/Interior/Panel/Instruments/magnetos/magnetos.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.090 </y-m>
+      <z-m> -0.050 </z-m>
     </offsets>
   </model>
   
@@ -70,56 +120,6 @@
     </offsets>
   </model>
  
-  <!-- TURN -->
-  <model>
-    <path>Aircraft/XP-67/Models/Interior/Panel/Instruments/turn/turn.xml</path>
-    <offsets>
-      <x-m> -0.006 </x-m>
-      <y-m> -0.040 </y-m>
-      <z-m>  0.150 </z-m>
-    </offsets>
-  </model>
-  
-  <!-- VSI -->
-  <model>
-    <path>Aircraft/XP-67/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
-    <offsets>
-      <x-m> -0.003 </x-m>
-      <y-m>  0.061 </y-m>
-      <z-m>  0.150 </z-m>
-    </offsets>
-  </model>
-  
-  <!-- RPM -->
-  <model>
-    <path>Aircraft/XP-67/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
-    <offsets>
-      <x-m> -0.005 </x-m>
-      <y-m>  0.161 </y-m>
-      <z-m>  0.150 </z-m>
-    </offsets>
-  </model>
-  
-  <!-- ALT -->
-  <model>
-    <path>Aircraft/XP-67/Models/Interior/Panel/Instruments/alt/alt.xml</path>
-    <offsets>
-      <x-m> -0.005 </x-m>
-      <y-m>  0.260 </y-m>
-      <z-m>  0.150 </z-m>
-    </offsets>
-  </model>
-  
-  <!-- FLAPS/GEARS -->
-  <model>
-    <path>Aircraft/XP-67/Models/Interior/Panel/Instruments/flapsgear/flapgear.xml</path>
-    <offsets>
-      <x-m> -0.009 </x-m>
-      <y-m> -0.040 </y-m>
-      <z-m>  0.057 </z-m>
-    </offsets>
-  </model>
-  
   <!-- PSI -->
   <model>
     <path>Aircraft/XP-67/Models/Interior/Panel/Instruments/psi/psiL.xml</path>
@@ -139,33 +139,33 @@
     </offsets>
   </model>
   
-  <!-- MAGNETOS -->
+  <!-- RPM -->
   <model>
-    <path>Aircraft/XP-67/Models/Interior/Panel/Instruments/magnetos/magnetos.xml</path>
+    <path>Aircraft/XP-67/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m> -0.090 </y-m>
-      <z-m> -0.050 </z-m>
+      <x-m> -0.005 </x-m>
+      <y-m>  0.161 </y-m>
+      <z-m>  0.150 </z-m>
     </offsets>
   </model>
   
-  <!-- FUEL -->
+  <!-- TURN -->
   <model>
-    <path>Aircraft/XP-67/Models/Interior/Panel/Instruments/fuel/fuel.xml</path>
+    <path>Aircraft/XP-67/Models/Interior/Panel/Instruments/turn/turn.xml</path>
     <offsets>
-      <x-m> -0.005 </x-m>
-      <y-m> -0.207 </y-m>
-      <z-m>  0.434 </z-m>
+      <x-m> -0.006 </x-m>
+      <y-m> -0.040 </y-m>
+      <z-m>  0.150 </z-m>
     </offsets>
   </model>
   
-  <!-- AMMETER -->
+  <!-- VSI -->
   <model>
-    <path>Aircraft/XP-67/Models/Interior/Panel/Instruments/ammeter/ammeter.xml</path>
+    <path>Aircraft/XP-67/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
     <offsets>
-      <x-m> -0.005 </x-m>
-      <y-m> -0.122 </y-m>
-      <z-m>  0.434 </z-m>
+      <x-m> -0.003 </x-m>
+      <y-m>  0.061 </y-m>
+      <z-m>  0.150 </z-m>
     </offsets>
   </model>
   
