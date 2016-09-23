@@ -14,7 +14,7 @@
 -->
 <airplane mass="17745" version="YASIM_VERSION_CURRENT">
 
-  <approach speed="60" aoa="3" fuel="0.3">
+  <approach speed="60" aoa="2" fuel="0.3">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
     <control-setting axis="/controls/engines/engine[0]/boost" value="0"/>
     <control-setting axis="/controls/engines/engine[0]/mixture" value="1"/>
@@ -47,18 +47,23 @@
   <cockpit x="2.277" y="0" z="0.444"/>
 
   <!-- Fuselage -->
-  <fuselage ax="6.819" ay=" 0.000" az="-0.414" bx="-5.878" by=" 0.000" bz="-0.220" width="1.13" taper="0.3" midpoint="0.20"/>
-
+  <fuselage ax="6.819" ay=" 0.000" az="-0.414" bx="-5.878" by=" 0.000" bz="-0.220" width="1.130" taper="0.3" midpoint="0.20"/>
+  
+  <!-- Cockpit -->
+  <fuselage ax="4.559" ay=" 0.000" az=" 0.181" bx=" 3.544" by=" 0.000" bz=" 0.474" width="0.752" taper="0.3" midpoint="1.00"/>
+  <fuselage ax="3.644" ay=" 0.000" az=" 0.474" bx=" 1.640" by=" 0.000" bz=" 0.474" width="0.752" taper="1.0" midpoint="1.00"/>
+  <fuselage ax="1.695" ay=" 0.000" az=" 0.470" bx="-1.017" by=" 0.000" bz=" 0.134" width="0.752" taper="0.2" midpoint="0.00"/>
+  
   <!-- Engine left -->
-  <fuselage ax="4.185" ay=" 2.916" az="-0.116" bx="-1.843" by=" 2.916" bz="-0.245" width="1.00" taper="0.5" midpoint="0.50"/>
+  <fuselage ax="4.185" ay=" 2.916" az="-0.116" bx="-1.843" by=" 2.916" bz="-0.245" width="1.200" taper="0.5" midpoint="0.50"/>
 
   <!-- Engine right -->
-  <fuselage ax="4.185" ay="-2.916" az="-0.116" bx="-1.843" by="-2.916" bz="-0.245" width="1.00" taper="0.5" midpoint="0.50"/>
+  <fuselage ax="4.185" ay="-2.916" az="-0.116" bx="-1.843" by="-2.916" bz="-0.245" width="1.200" taper="0.5" midpoint="0.50"/>
 
   <!-- Wing -->
-  <wing x="0.879" y="0.354" z="-0.302"
+  <wing x="0.879" y="0" z="-0.302"
         chord="3.5"
-        length="8"
+        length="8.378"
         taper="0.30"
         dihedral="5"
         sweep="-4"
@@ -85,8 +90,8 @@
          taper="0.5"
          sweep="6"
          dihedral="9">
-         <stall aoa="18" width="1" peak="1.3"/>
-         <flap0 start="0" end="0.85" lift="1.2" drag="1.3"/>
+         <stall aoa="18" width="1" peak="1.5"/>
+         <flap0 start="0" end="1" lift="1.2" drag="1.1"/>
 
          <control-input axis="/controls/flight/elevator" control="FLAP0"/>
          <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
@@ -102,7 +107,6 @@
          taper="0.6">
          <stall aoa="16" width="2" peak="2.5"/>
          <flap0 start="0" end="1" lift="1.3" drag="1.5"/>
-
          <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
          <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
 
@@ -120,7 +124,7 @@
                  Displacement      : 1425 cu in (  23.35 l )
   -->
   <!-- Engine left interior -->
-  <propeller x="3.455" y="2.916" z="0.129"
+  <propeller x="3.465" y="2.916" z="0.129"
              radius="1.9"
              mass="1615"
              moment="25"
@@ -145,7 +149,7 @@
   </propeller>
 
   <!-- Engine right interior-->
-  <propeller x="3.455" y="-2.916" z="0.129"
+  <propeller x="3.465" y="-2.916" z="0.129"
              radius="1.9"
              mass="1615"
              moment="-25"

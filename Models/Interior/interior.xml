@@ -24,13 +24,6 @@
 
   <!-- working for Rembrandt -->
   <effect>
-    <inherits-from>Aircraft/XP-67/Models/Effects/Glass/glass</inherits-from>
-    <object-name>intvitres</object-name>
-    <object-name>intcanope</object-name>
-  </effect>
-  
-  <!-- working for Rembrandt -->
-  <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>intvitres</object-name>
     <object-name>intcanope</object-name>
